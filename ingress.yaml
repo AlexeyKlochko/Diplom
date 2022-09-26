@@ -16,4 +16,4 @@ spec:
             backend:
               service:
                 name: "service-java-microservice"
-                port:
+                port: 80
