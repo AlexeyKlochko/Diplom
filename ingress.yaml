@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: "java-microservice-ingress"
+  annotations:
+    kubernetes.io/ingress.class: alb
+  labels:
+    app: java-microservice
+spec:
+  ingressClassName: alb
+  rules:
+    - http:
+        paths:
+          - path: /*
+            pathType: Prefix
+            backend:
+              service:
+                name: "service-java-microservice"
+                port:
