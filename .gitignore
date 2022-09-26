@@ -70,3 +70,11 @@ override.tf.json
 .terraformrc
 >>>>>>> f7a3b17421093f30c4cea1f72b7e811dcf1da104
 terraform.rc
+
+.idea
+target
+*.iml
+*.log
+
+.DS_Store
+.idea/
