@@ -1,0 +1,8 @@
+datasources:
+  datasources.yaml:
+    apiVersion: 1
+    - name: Prometheus
+      type: prometheus
+      url: http://prometheus-server.prometheus.svc.cluser.local
+      access: proxy
+      isDefault: true
