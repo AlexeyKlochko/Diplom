@@ -1,7 +1,15 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: webapp
+  labels:
+    name: webapp
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp-deployment
+  Namespace: webapp
   labels:
     app: webapp
 spec:
